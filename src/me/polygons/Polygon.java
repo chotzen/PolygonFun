@@ -74,8 +74,6 @@ public class PolygonUtil {
 				System.out.println("Error: That isn't a regular polygon!");
 				System.out.println(e.toString());
 			}
-			
-			
 		}
 		
 		public void setInfo(double sides)
@@ -183,11 +181,7 @@ public class PolygonUtil {
 			System.out.println("Hey, that isn't even a number, silly!");
 			askForMode();
 		}
-		
-		
-		
 	}
-	
 	
 	public static double askForNumber()
 	{
