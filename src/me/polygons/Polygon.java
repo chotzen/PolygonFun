@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class PolygonUtil {
 
-
 	static class Polygon
 	{
 		double sides;
