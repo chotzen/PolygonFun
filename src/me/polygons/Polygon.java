@@ -25,9 +25,7 @@ public class PolygonUtil {
 					setInfo(360 / eachExtAngle);
 				} 
 				else if (!(eachIntAngle == 0))
-					
 				{
-					
 					System.out.println(eachIntAngle);
 					int count = 3;
 					
@@ -95,7 +93,7 @@ public class PolygonUtil {
 				}
 			} else
 			{
-				System.out.println("That isn't a regular polygon.");
+				System.out.println("That isn't a regular polygon!");
 			}
 		}
 		
