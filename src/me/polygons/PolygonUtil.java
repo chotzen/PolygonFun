@@ -28,7 +28,7 @@ public class PolygonUtil {
 					
 				{
 					
-					System.out.println(eachIntAngle);
+					//System.out.println(eachIntAngle);
 					int count = 3;
 					
 					if (eachIntAngle < 180)
@@ -38,7 +38,7 @@ public class PolygonUtil {
 							if (eachIntAngle == (180 * (count - 2)) / count)
 							{
 								setInfo(count);
-								System.out.println(count);
+								//System.out.println(count);
 								break;
 							}
 							
@@ -65,7 +65,25 @@ public class PolygonUtil {
 				}
 				else if (!(diagonals == 0))
 				{
+					int count = 3;
 					
+					while (true)
+					{
+						if (diagonals == (count * (count-3) / 2))
+						{
+							setInfo(count);
+							//System.out.println(count);
+							break;
+						}
+						
+						if (diagonals < (count * (count-3) / 2))
+						{
+							System.out.println("Error: Not a polygon!");
+							break;
+						}
+				
+						count++;
+					}
 				}
 				
 			}
@@ -93,7 +111,7 @@ public class PolygonUtil {
 				}
 				else
 				{
-					System.out.println("I don't know what kind of planet you're living on, but that's not a polygon.");
+					System.out.println("Polygons must have 3 or more sides.");
 				}
 			} else
 			{
