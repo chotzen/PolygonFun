@@ -2,19 +2,6 @@ package com.devinhartzell.PolygonGUI;
 
 import java.awt.Composite;
 
-import javax.annotation.PostConstruct;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.Color;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import javax.swing.UIManager;
-
 public class PolygonGUI extends JFrame {
 	
 	private static final long serialVersionUID = 9001L;
@@ -126,6 +113,8 @@ public class PolygonGUI extends JFrame {
 		getContentPane().add(diagonalsTextField);
 		
 		JButton goButton = new JButton("Go");
+		goButton.setToolTipText("Calculate the other values");
+		goButton.setBackground(UIManager.getColor("Button.light"));
 		goButton.addMouseListener(new MouseAdapter() {
 			
 			
@@ -300,6 +289,10 @@ public class PolygonGUI extends JFrame {
 	
 	public static void main(String args[])
 	{
-		new PolygonGUI();
+		javax.swing.SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				new PolygonGUI();
+			}
+		});
 	}
 }
