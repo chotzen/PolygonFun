@@ -1,6 +1,19 @@
 package com.devinhartzell.PolygonGUI;
 
+import java.awt.Color;
 import java.awt.Composite;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.annotation.PostConstruct;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.UIManager;
 
 public class PolygonGUI extends JFrame {
 	
